@@ -1,0 +1,197 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="{% static '/images/circle-favicon.ico' %}" type="image/x-icon">
+    <title>Sagar Mohanty</title>
+</head>
+<body>
+    
+    <!-- Navbar --> 
+    <div id="navbar">
+        <a class="nav-logo" href="/"></a>
+        <div class="nav-links">
+            <a class="navlink" href="#">Home</a>
+            <a class="navlink" href="#about">About</a>
+            <a class="navlink" href="#experience">Experience</a>
+            <a class="navlink" href="#projects">Project</a>
+            <!-- <a href="#blogs">Blogs</a> -->
+            <a class="navlink" href="#contact">Contact</a>
+            <a class="resume-link" href="{% static '/resume.pdf' %}" target="_blank">Resume</a>
+        </div>
+        <div class="d-toggle" >
+            <i class="fa fa-bars" id="btn-toggle"></i>
+        </div>
+    </div>
+
+    <!-- Home -->
+    <div id="home">
+        <img class="hero-img" src='{% static "/images/hero.jpeg" %}' alt="">
+        <div style="text-align: left;">
+            <p>Hi I'm </p>
+            <h1 style="color: var(--chalk1);"> SAGAR MOHANTY</h1>
+            <!-- <h1><code> < Web Developer /></code></h1> -->
+        </div>
+
+        <a href="#about"><img src="{% static '/images/down.png' %}" alt=""></a>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="glass-container">
+            <div class="container__text">
+                <h1 style="color: var(--chalk1);margin: auto;width: fit-content;" class="field__heading">
+                    About Me
+                </h1>
+                <p style="color: var(--chalk1);" class="about__para">Hello! My name is Sagar Mohanty Under Graduate b-tech student and I love creating full stack web applications that either solves somekind of problem or helps me learn a new skill.</p>
+                <p style="color: var(--chalk1);" class="about__para">I started my journey as a freelance web developer and worked on some client projects. Now a days I work as a web developer intern in <a href="https://www.zebu.ai/" target="_blank" class="black-link">Zebu Intelligent Systems.</a></p>
+                
+                <div>
+                    <h3>Here are some of the technoogies I usually work on:</h3>
+                    <div class="about__tech">
+                        <div class="tech__left">
+                            <ul>
+                                <li>&#9658; Python</li>
+                                <li>&#9658; Django</li>
+                                <li>&#9658; JavaScript</li>
+                                <li>&#9658; NodeJS</li>
+                            </ul>
+                        </div>
+                        <ul>
+                            <li>&#9658; HTML5</li>
+                            <li>&#9658; CSS3</li>
+                            <li>&#9658; Bootstap</li>
+                            <li>&#9658; ReactJS</li>
+                        </ul>
+                    </div>
+                </div>
+                <p style="color: var(--chalk1);" class="about__para">In my free time I also do some problem solving on platforms like <a href="https://www.hackerrank.com/sagarmohanty2k00" target="_blank" class="black-link">Hackerrank</a>, <a href="https://www.codechef.com/users/sagar2k" target="_blank" class="black-link">CodeChef</a> and <a href="https://leetcode.com/sagar__mohanty/" target="_blank" class="black-link">LeetCode</a>.</p>
+            </div>
+            <div class="container__pic">
+                <img src="https://source.unsplash.com/random" alt="" class="container__pic__hero">
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience -->
+    <div id="experience">
+        <h1 style="color: var(--chalk1);margin: auto;width: fit-content;">Work Experience</h1>
+
+        <!-- <div class="bar"></div> -->
+
+        <div id="1" class="box-container__small small_height_card">
+            <button id="btn1" class="top-right" onclick="expandCard(1)">+</button>
+            <div class="green__ball"></div>
+            <div class="">
+                <div class="experience__display">
+                    <h3>WEB DEVELOPER INTERN</h3>
+                    <p>At Zebu Intelligent Systems</p>
+                    <p>March - 2021 to PRESENT</p>
+                </div>
+                <div class="experience__cover">
+                    <p>Some notable works I have done:</p>
+                    <ul>
+                        <li>&#9658; Built the entire backend of <a class="black-link" href="https://www.zebu.ai">zebu.ai</a> from scratch with django.</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="2" class="box-container__small small_height_card">
+            <button id="btn2" class="top-right" onclick="expandCard(2)">+</button>
+            <div class="red__ball"></div>
+            <div class="">
+                <div class="experience__display">
+                    <h3>WEB DEVELOPER INTERN</h3>
+                    <p>At Zebu Intelligent Systems</p>
+                    <p>March - 2020 to FEB - 2021</p>
+                </div>
+                <div class="experience__cover">
+                    <p>Some notable works I have done:</p>
+                    <ul>
+                        <li>&#9658; Built the entire backend of <a class="black-link" href="https://www.zebu.ai">zebu.ai</a> from scratch with django.</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="3" class="box-container__small small_height_card">
+            <button id="btn3" class="top-right" onclick="expandCard(3)">+</button>
+            <div class="red__ball"></div>
+            <div class="">
+                <div class="experience__display">
+                    <h3>WEB DEVELOPER INTERN</h3>
+                    <p>At Zebu Intelligent Systems</p>
+                    <p>March - 2020 to FEB - 2021</p>
+                </div>
+                <div class="experience__cover">
+                    <p>Some notable works I have done:</p>
+                    <ul>
+                        <li>&#9658; Built the entire backend of <a class="black-link" href="https://www.zebu.ai">zebu.ai</a> from scratch with django.</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects"></div>
+
+    <!-- Blogs -->
+    <!-- <div id="blogs"></div> -->
+
+    <!-- Contact -->
+    <div id="contact"></div>
+
+    <!-- Social Links -->
+    <div id="social">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-github"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-instagram"></i>
+        <div class="virtcaline"></div>
+    </div>
+    <script src="{% static '/js/particle.js' %}"></script>
+    <script src="{% static '/js/app.js' %}"></script>
+
+    <script>
+        var currentCard = 0;
+        function expandCard(id) {
+            console.log('entered');
+
+            if (currentCard == id) {
+                document.getElementById(currentCard).classList.toggle('small_height_card');
+                var btnId = 'btn' + currentCard
+                document.getElementById(btnId).innerHTML = '+'
+                console.log('closed');
+                currentCard = 0
+
+                return;
+            }
+            
+            if(currentCard != 0){
+                document.getElementById(currentCard).classList.toggle('small_height_card');
+                var btnId = 'btn' + currentCard
+                document.getElementById(btnId).innerHTML = '+'
+                console.log('closed');
+            }
+            
+            document.getElementById(id).classList.toggle('small_height_card')
+            currentCard = id;
+            var btnId = 'btn' + id
+            document.getElementById(btnId).innerHTML = '-'
+
+            console.log('opened');
+
+        }
+    </script>
+</body>
+</html>
