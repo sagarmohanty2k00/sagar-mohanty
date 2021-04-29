@@ -19,7 +19,7 @@
             <a class="navlink" href="#">Home</a>
             <a class="navlink" href="#about">About</a>
             <a class="navlink" href="#experience">Experience</a>
-            <a class="navlink" href="#projects">Project</a>
+            <a class="navlink" href="#projects">Projects</a>
             <!-- <a href="#blogs">Blogs</a> -->
             <a class="navlink" href="#contact">Contact</a>
             <a class="resume-link" href="{% static '/resume.pdf' %}" target="_blank">Resume</a>
@@ -48,11 +48,11 @@
                 <h1 style="color: var(--chalk1);margin: auto;width: fit-content;" class="field__heading">
                     About Me
                 </h1>
-                <p style="color: var(--chalk1);" class="about__para">Hello! My name is Sagar Mohanty Under Graduate b-tech student and I love creating full stack web applications that either solves somekind of problem or helps me learn a new skill.</p>
-                <p style="color: var(--chalk1);" class="about__para">I started my journey as a freelance web developer and worked on some client projects. Now a days I work as a web developer intern in <a href="https://www.zebu.ai/" target="_blank" class="black-link">Zebu Intelligent Systems.</a></p>
+                <p style="color: var(--chalk1);" class="about__para">Hello! My name is Sagar Mohanty, Under Graduate b-tech student and I love creating full stack web applications that either solves somekind of problem or helps me learning new skills.</p>
+                <p style="color: var(--chalk1);" class="about__para">I started my journey as a freelance web developer and worked on some client projects. Currently I work as a web developer intern in <a href="https://www.zebu.ai/" target="_blank" class="black-link">Zebu Intelligent Systems.</a></p>
                 
                 <div>
-                    <h3>Here are some of the technoogies I usually work on:</h3>
+                    <h3>Here are some of the technogies I usually work on:</h3>
                     <div class="about__tech">
                         <div class="tech__left">
                             <ul>
@@ -73,7 +73,7 @@
                 <p style="color: var(--chalk1);" class="about__para">In my free time I also do some problem solving on platforms like <a href="https://www.hackerrank.com/sagarmohanty2k00" target="_blank" class="black-link">Hackerrank</a>, <a href="https://www.codechef.com/users/sagar2k" target="_blank" class="black-link">CodeChef</a> and <a href="https://leetcode.com/sagar__mohanty/" target="_blank" class="black-link">LeetCode</a>.</p>
             </div>
             <div class="container__pic">
-                <img src="https://source.unsplash.com/random" alt="" class="container__pic__hero">
+                <img src=""  alt="" class="container__pic__hero">
             </div>
         </div>
     </div>
@@ -103,62 +103,108 @@
             </div>
         </div>
 
-        <div id="2" class="box-container__small small_height_card">
-            <button id="btn2" class="top-right" onclick="expandCard(2)">+</button>
-            <div class="red__ball"></div>
-            <div class="">
-                <div class="experience__display">
-                    <h3>WEB DEVELOPER INTERN</h3>
-                    <p>At Zebu Intelligent Systems</p>
-                    <p>March - 2020 to FEB - 2021</p>
-                </div>
-                <div class="experience__cover">
-                    <p>Some notable works I have done:</p>
-                    <ul>
-                        <li>&#9658; Built the entire backend of <a class="black-link" href="https://www.zebu.ai">zebu.ai</a> from scratch with django.</li>
-                    </ul>
-                </div>
-                
-            </div>
-        </div>
-
-        <div id="3" class="box-container__small small_height_card">
-            <button id="btn3" class="top-right" onclick="expandCard(3)">+</button>
-            <div class="red__ball"></div>
-            <div class="">
-                <div class="experience__display">
-                    <h3>WEB DEVELOPER INTERN</h3>
-                    <p>At Zebu Intelligent Systems</p>
-                    <p>March - 2020 to FEB - 2021</p>
-                </div>
-                <div class="experience__cover">
-                    <p>Some notable works I have done:</p>
-                    <ul>
-                        <li>&#9658; Built the entire backend of <a class="black-link" href="https://www.zebu.ai">zebu.ai</a> from scratch with django.</li>
-                    </ul>
-                </div>
-                
-            </div>
-        </div>
     </div>
 
     <!-- Projects -->
-    <div id="projects"></div>
+    <div id="projects">
+        <h1 style="width: fit-content;margin: auto;">Projects</h1>
+        <div class="right__text">
+            <a href="http://schoolquiz243.herokuapp.com" target="_blank"><img class="project__image" src="{% static '/images/Project_1.png' %}" alt="#"></a>
+            <div class="project_text__right">
+                <h3 >SCHOOL QUIZ</h3>
+                <p><span style="margin-left: 10px;">Django</span> <span style="margin-left: 10px;">HTML</span> <span style="margin-left: 10px;">CSS</span> <span style="margin-left: 10px;">SQLITE3</span></p>
+                <div class="project__description">
+                    <p>
+                        An online examination system, which helps students to appear the quiz provided in the site. Students can also view their results after the test and also the leadeboard.
+                    </p>
+                </div>
+                <div class="project__links">
+                    <a style="margin-right: 10px;" href=""><i class="fa fa-github"></i>SOURCE CODE</a>
+                    <a href="http://schoolquiz243.herokuapp.com" target="_blank">VIEW LIVE</a>
+                </div>
+            </div>
+        </div>
+        <div class="left__text">
+            <a href="http://e-commerce243.herokuapp.com" target="_blank"><img class="project__image" src="{% static '/images/Project_2.png' %}" alt="#"></a>
+            <div class="project_text__left">
+                <h3>TITLE OF PROJECT</h3>
+                <p>Django React.js</p>
+                <div class="project__description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet consequuntur odio voluptate molestiae esse debitis porro laborum earum reprehenderit officiis ipsam voluptas, ratione quidem error. Doloremque delectus suscipit natus, libero explicabo obcaecati consequatur illum.
+                    </p>
+                </div>
+                <div class="project__links">
+                    <a style="margin-right: 10px;" href=""><i class="fa fa-github"></i> VIEW SOURCE</a>
+                    <a href="http://e-commerce243.herokuapp.com" target="_blank">VIEW LIVE</a>
+                </div>
+            </div>
+        </div>
+        <div class="right__text">
+            <a href="http://e-library243.herokuapp.com" target="_blank"><img class="project__image" src="{% static '/images/Project_3.png' %}" alt="#"></a>
+            <div class="project_text__right">
+                <h3>TITLE OF PROJECT</h3>
+                <p>T E C H S T A C K</p>
+                <div class="project__description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet consequuntur odio voluptate molestiae esse debitis porro laborum earum reprehenderit officiis ipsam voluptas, ratione quidem error. Doloremque delectus suscipit natus, libero explicabo obcaecati consequatur illum.
+                    </p>
+                </div>
+                <div class="project__links">
+                    <a href=""><i class="fa fa-github"></i> VIEW SOURCE</a>
+                    <a style="margin-right: 10px;" href="http://e-library243.herokuapp.com" target="_blank">VIEW LIVE</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Blogs -->
     <!-- <div id="blogs"></div> -->
 
     <!-- Contact -->
-    <div id="contact"></div>
+    <div id="contact">
+        <div class="glass-container d-flex_col">
+            
+            <div class="contact__text">
+                <h1>Get In Touch</h1>
+                <p>
+                    Hello! if you have anything to say you can either contact me through my social media handles or you can drop a message here.
+                </p>
+            </div>
+
+            <div class="d-flex">
+
+                <div class="contact__container">
+                    <form class="contact__form" action="">
+                        <input placeholder="name" type="text" id="name">
+                        <input placeholder="email" type="email" id="email">
+                        <input placeholder="subject" type="text" id="subject">
+                        <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+        
+                        <button class="contact__send">
+                            SEND
+                        </button>
+                    </form>
+                </div>
+    
+                <div class="contact__virtcaline"></div>
+    
+                <div class="contact__social">
+                    <a href=""><i style="font-size:24px;" class="fa fa-linkedin"></i> LINKEDIN</a>
+                    <a href=""><i style="font-size:24px;" class="fa fa-github"></i> GITHUB</a>
+                    <a href=""><i style="font-size:24px;" class="fa fa-instagram"></i> INSTAGRAM</a>
+                    <a href=""><i style="font-size:24px;" class="fa fa-facebook"></i> FACEBOOK</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Social Links -->
-    <div id="social">
+    <!-- <div id="social">
         <i class="fa fa-facebook"></i>
         <i class="fa fa-github"></i>
         <i class="fa fa-linkedin"></i>
         <i class="fa fa-instagram"></i>
         <div class="virtcaline"></div>
-    </div>
+    </div> -->
     <script src="{% static '/js/particle.js' %}"></script>
     <script src="{% static '/js/app.js' %}"></script>
 
