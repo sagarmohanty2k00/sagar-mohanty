@@ -8,25 +8,38 @@
     <link rel="stylesheet" href="{% static '/css/style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="{% static '/images/circle-favicon.ico' %}" type="image/x-icon">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap" rel="stylesheet">
+
     <title>Sagar Mohanty</title>
 </head>
 <body>
     
     <!-- Navbar --> 
-    <div id="navbar">
-        <a class="nav-logo" href="/"></a>
+    <div id="navbar" class="nav small-nav">
+        
+        <div class="nav-header">
+            <a class="nav-logo" href="/"></a>
+            <div class="d-toggle" >
+                <i class="fa fa-bars d-none" id="btn-toggle" onclick="navToggle()"></i>
+            </div>
+        </div>
+
         <div class="nav-links">
-            <a class="navlink" href="#">Home</a>
-            <a class="navlink" href="#about">About</a>
-            <a class="navlink" href="#experience">Experience</a>
-            <a class="navlink" href="#projects">Projects</a>
+            <a class="navlink" href="/#" onclick="navToggle()"> <button class="nav-btn">Home</button></a>
+            <a class="navlink" href="/#about"><button class="nav-btn" onclick="navToggle()">About</button></a>
+            <a class="navlink" href="/#experience"><button class="nav-btn" onclick="navToggle()">Experience</button></a>
+            <a class="navlink" href="/#projects"><button class="nav-btn" onclick="navToggle()">Projects</button></a>
             <!-- <a href="#blogs">Blogs</a> -->
-            <a class="navlink" href="#contact">Contact</a>
-            <a class="resume-link" href="{% static '/resume.pdf' %}" target="_blank">Resume</a>
+            <a class="navlink" href="/#contact"><button class="nav-btn" onclick="navToggle()">Contact</button></a>
+
+            
+            <a class="" href="{% static '/resume.pdf' %}" target="_blank"><button class="nav-btn resume-link" onclick="navToggle()">Resume</button></a>
         </div>
-        <div class="d-toggle" >
-            <i class="fa fa-bars" id="btn-toggle"></i>
-        </div>
+
     </div>
 
     <!-- Home -->
@@ -80,7 +93,7 @@
 
     <!-- Experience -->
     <div id="experience">
-        <h1 style="color: var(--chalk1);margin: auto;width: fit-content;">Work Experience</h1>
+        <h1 style="color: var(--chalk1);margin: auto;width: fit-content; margin-top: 100px;">Work Experience</h1>
 
         <!-- <div class="bar"></div> -->
 
@@ -107,12 +120,18 @@
 
     <!-- Projects -->
     <div id="projects">
+        
         <h1 style="width: fit-content;margin: auto;">Projects</h1>
+
         <div class="right__text">
             <a href="http://schoolquiz243.herokuapp.com" target="_blank"><img class="project__image" src="{% static '/images/Project_1.png' %}" alt="#"></a>
             <div class="project_text__right">
-                <h3 >SCHOOL QUIZ</h3>
-                <p><span style="margin-left: 10px;">Django</span> <span style="margin-left: 10px;">HTML</span> <span style="margin-left: 10px;">CSS</span> <span style="margin-left: 10px;">SQLITE3</span></p>
+                <h3 style="margin-bottom: 10px;">SCHOOL QUIZ</h3>
+
+                <div class="techs">
+                    <span class="tech">Django</span> <span  class="tech">HTML</span> <span  class="tech">CSS</span> <span  class="tech">SQLITE3</span>
+                </div>
+
                 <div class="project__description">
                     <p>
                         An online examination system, which helps students to appear the quiz provided in the site. Students can also view their results after the test and also the leadeboard.
@@ -124,7 +143,50 @@
                 </div>
             </div>
         </div>
-        <div class="left__text">
+
+        <div class="right__text">
+            <a href="http://e-library243.herokuapp.com" target="_blank"><img class="project__image" src="{% static '/images/Project_1.png' %}" alt="#"></a>
+            <div class="project_text__right">
+                <h3 style="margin-bottom: 10px;">SCHOOL QUIZ</h3>
+
+                <div class="techs">
+                    <span class="tech">Django</span> <span  class="tech">HTML</span> <span  class="tech">CSS</span> <span  class="tech">SQLITE3</span>
+                </div>
+
+                <div class="project__description">
+                    <p>
+                        An online examination system, which helps students to appear the quiz provided in the site. Students can also view their results after the test and also the leadeboard.
+                    </p>
+                </div>
+                <div class="project__links">
+                    <a style="margin-right: 10px;" href=""><i class="fa fa-github"></i>SOURCE CODE</a>
+                    <a href="http://schoolquiz243.herokuapp.com" target="_blank">VIEW LIVE</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="right__text">
+            <a href="http://e-commerce243.herokuapp.com" target="_blank"><img class="project__image" src="{% static '/images/Project_1.png' %}" alt="#"></a>
+            <div class="project_text__right">
+                <h3 style="margin-bottom: 10px;">SCHOOL QUIZ</h3>
+
+                <div class="techs">
+                    <span class="tech">Django</span> <span  class="tech">HTML</span> <span  class="tech">CSS</span> <span  class="tech">SQLITE3</span>
+                </div>
+
+                <div class="project__description">
+                    <p>
+                        An online examination system, which helps students to appear the quiz provided in the site. Students can also view their results after the test and also the leadeboard.
+                    </p>
+                </div>
+                <div class="project__links">
+                    <a style="margin-right: 10px;" href=""><i class="fa fa-github"></i>SOURCE CODE</a>
+                    <a href="http://schoolquiz243.herokuapp.com" target="_blank">VIEW LIVE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="left__text">
             <a href="http://e-commerce243.herokuapp.com" target="_blank"><img class="project__image" src="{% static '/images/Project_2.png' %}" alt="#"></a>
             <div class="project_text__left">
                 <h3>TITLE OF PROJECT</h3>
@@ -153,7 +215,7 @@
                     <a style="margin-right: 10px;" href="http://e-library243.herokuapp.com" target="_blank">VIEW LIVE</a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <!-- Blogs -->
@@ -170,28 +232,20 @@
                 </p>
             </div>
 
-            <div class="d-flex">
+            <div>
 
                 <div class="contact__container">
-                    <form class="contact__form" action="">
-                        <input placeholder="name" type="text" id="name">
-                        <input placeholder="email" type="email" id="email">
-                        <input placeholder="subject" type="text" id="subject">
-                        <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+                    <form class="contact__form" action='/send/message/' method="POST">
+                        {% csrf_token %}
+                        <input name="name" placeholder="name" type="text" id="name">
+                        <input name="email" placeholder="email" type="email" id="email">
+                        <input name="subject" placeholder="subject" type="text" id="subject">
+                        <textarea name="message" placeholder="message" name="" id="" cols="30" rows="10"></textarea>
         
-                        <button class="contact__send">
+                        <button class="contact__send" onclick="validate()">
                             SEND
                         </button>
                     </form>
-                </div>
-    
-                <div class="contact__virtcaline"></div>
-    
-                <div class="contact__social">
-                    <a href=""><i style="font-size:24px;" class="fa fa-linkedin"></i> LINKEDIN</a>
-                    <a href=""><i style="font-size:24px;" class="fa fa-github"></i> GITHUB</a>
-                    <a href=""><i style="font-size:24px;" class="fa fa-instagram"></i> INSTAGRAM</a>
-                    <a href=""><i style="font-size:24px;" class="fa fa-facebook"></i> FACEBOOK</a>
                 </div>
             </div>
         </div>
@@ -205,39 +259,6 @@
         <i class="fa fa-instagram"></i>
         <div class="virtcaline"></div>
     </div> -->
-    <script src="{% static '/js/particle.js' %}"></script>
     <script src="{% static '/js/app.js' %}"></script>
-
-    <script>
-        var currentCard = 0;
-        function expandCard(id) {
-            console.log('entered');
-
-            if (currentCard == id) {
-                document.getElementById(currentCard).classList.toggle('small_height_card');
-                var btnId = 'btn' + currentCard
-                document.getElementById(btnId).innerHTML = '+'
-                console.log('closed');
-                currentCard = 0
-
-                return;
-            }
-            
-            if(currentCard != 0){
-                document.getElementById(currentCard).classList.toggle('small_height_card');
-                var btnId = 'btn' + currentCard
-                document.getElementById(btnId).innerHTML = '+'
-                console.log('closed');
-            }
-            
-            document.getElementById(id).classList.toggle('small_height_card')
-            currentCard = id;
-            var btnId = 'btn' + id
-            document.getElementById(btnId).innerHTML = '-'
-
-            console.log('opened');
-
-        }
-    </script>
 </body>
 </html>
