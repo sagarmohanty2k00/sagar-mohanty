@@ -360,9 +360,6 @@ i.fa-bars {
     height: 100px;
 }
 
-
-
-
 /* Projects */
 #projects {
     height: fit-content;
@@ -377,6 +374,8 @@ i.fa-bars {
 .techs {
     display: flex;
     flex-wrap: wrap;
+    margin-left: auto;
+    width: fit-content;
 }
 
 .tech {
@@ -388,7 +387,31 @@ i.fa-bars {
     margin: 5px;
 }
 
+.project_cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.btn-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 4px;
+    color: black;
+    padding: 7px 15px;
+    width: fit-content;
+    background-color: goldenrod;
+
+    margin: auto;
+    margin-top: 50px;
+}
+
+.fa-arrow-right {
+    margin-left: 20px;
+}
 
 /* Contact */
 #contact {
@@ -403,11 +426,13 @@ i.fa-bars {
     justify-content: center;
     align-items: center;
 }
+
 .contact__text {
     text-align: center;
     width: 60%;
     margin: auto;
 }
+
 .contact__container {
     height: fit-content;
     width: 100%;
@@ -417,6 +442,7 @@ i.fa-bars {
     flex-direction: column;
     align-items: center;
 }
+
 .contact__container p {
     margin: 10px auto;
     line-height: 1.6;
@@ -424,6 +450,7 @@ i.fa-bars {
     font-size: 18px;
     margin: 40px;
 }
+
 .contact__form {
     width: 100%;
     display: flex;
@@ -441,6 +468,7 @@ input {
 
     text-align: center;
 }
+
 textarea {
     margin: auto;
     margin-top: 10px;
@@ -451,6 +479,7 @@ textarea {
 
     text-align: center;
 }
+
 .contact__send {
     border: none;
     background: none;
@@ -486,27 +515,41 @@ textarea {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .contact__social a {
     color: black;
 }
+
 .contact__social a:hover {
     color: var(--var2);
 }
+
 /* Social Links */
 #social{
-    position: fixed;
-    bottom: 0;
-    left: 30px;
+    font-size: 24px;
+    color: rgb(42, 42, 42);
+    width: 60%;
 
     display: flex;
-    flex-direction: column;
-
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
 
-    height: 40vh;
+    margin: auto;
+    margin-top: 40px;
+}
 
-    font-size: 20px;
+.fa-facebook:hover{
+    color: blue;
+}
+.fa-github:hover{
+    color: var(--var1);
+}
+.fa-linkedin:hover{
+    color: blue;
+}
+.fa-instagram:hover {
+    color: red;
 }
 
 .virtcaline{
@@ -514,7 +557,6 @@ textarea {
     width: 1px;
     background-color: var(--var1);
 }
-
 
 /* Media Queries */
 @media screen and (min-width: 801px) {
@@ -542,7 +584,9 @@ textarea {
         margin-left: 20px;
         text-align: left;
     }
+}
 
+@media screen and (min-width: 1281px) {
     /* Projects */
     .right__text{
         height: fit-content;
@@ -581,7 +625,7 @@ textarea {
         
         z-index: 2;
     
-        margin-top: 120px;
+        margin-top: 60px;
         margin-left: -200px;
     
         padding: 20px;
@@ -612,6 +656,55 @@ textarea {
         text-align: left;
     }
 }
+
+
+
+@media screen and (max-width: 1280px) {
+    /* Anout */
+    .glass-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Projects */
+    .right__text,
+    .left__text {
+        height: fit-content;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .project_text__right{
+        margin: 0 auto;
+        background-color: white;
+        text-align: left;
+        height: fit-content;
+        padding: 20px;
+    }
+    .project__image {
+        width: 100%;
+        background: black;
+    }
+    .project__description{
+        padding: 20px;
+    }
+
+    .project__links {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .project__links a{
+        color: black;
+        text-decoration: underline;
+    }
+    .fa {
+        margin-right: 10px;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .nav {
         display: flex;
@@ -658,9 +751,7 @@ textarea {
 
 
     /* About Section */
-    .glass-container {
-        display: flex;
-        flex-direction: column;
+    .glass-container{
         width: 98%;
     }
 
@@ -677,34 +768,6 @@ textarea {
         display: flex;
         flex-direction: column;
         margin: 50px auto 0;
-    }
-    .project_text__right{
-        margin: 0 auto;
-        background-color: white;
-        text-align: left;
-        height: fit-content;
-        padding: 20px;
-    }
-    .project__image {
-        width: 100%;
-        background: black;
-    }
-    .project__description{
-        padding: 20px;
-    }
-
-    .project__links {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .project__links a{
-        color: black;
-        text-decoration: underline;
-    }
-    .fa {
-        margin-right: 10px;
     }
 
 
