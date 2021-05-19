@@ -31,23 +31,14 @@ h6 {
     --full-height: cacl(100vh - 60px);
 
     /* --background-color: #23008b; */
-    --background-color: #f1f5f8;
-    /* --background-color: #dae2ec; */
+    /* --background-color: #f1f5f8; */
+    --background-color: #dae2ec;
     /* --background-color: #d4f0f0; */
     /* --background-color: rgb(255, 255, 255); */
     /* --background-color: rgb(14, 14, 31); */
 }
 ::-webkit-scrollbar{
     width: 8px;
-}
-::-webkit-scrollbar-track{
-    background-color: #000;
-}
-::-webkit-scrollbar-thumb{
-    background-color: var(--var2);
-}
-::-webkit-scrollbar-thumb:hover{
-    background-color: var(--var2);
 }
 
 /* Universal */
