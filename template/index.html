@@ -27,15 +27,21 @@
         </div>
 
         <div class="nav-links">
+
             <!-- <a class="navlink" href="/#" onclick="navToggle()"> <button class="nav-btn">Home</button></a> -->
+
             <a class="navlink" href="/#about"><button class="nav-btn" onclick="navToggle()">About</button></a>
+
             <a class="navlink" href="/#experience"><button class="nav-btn" onclick="navToggle()">Experience</button></a>
+
             <a class="navlink" href="/#projects"><button class="nav-btn" onclick="navToggle()">Projects</button></a>
+
             <a class="navlink" href="/#blogs"><button class="nav-btn" onclick="navToggle()">Blogs</button></a>
+
             <!-- <a class="navlink" href="/#contact"><button class="nav-btn" onclick="navToggle()">Contact</button></a> -->
 
-            
             <a class="" href="{% static '/resume.pdf' %}" target="_blank"><button class="nav-btn resume-link" onclick="navToggle()">Resume</button></a>
+
         </div>
 
     </div>
@@ -172,7 +178,47 @@
 
     <!-- Blogs -->
     <div id="blogs">
-        <div class="card"></div>
+        <h1 style="text-align: center; margin-bottom: 40px;">Recent Blogs</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1593720218365-b2076cfdefee?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjIxNDU0NzE3&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600" alt="">
+                <div class="border">
+                    <div class="blog-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem accusamus architecto veniam?
+                    </div>
+                    <div class="tags">
+                        <span class="tech">Django</span>
+                        <span  class="tech">HTML</span>
+                        <span  class="tech">CSS</span>
+                        <span  class="tech">SQLITE3</span>
+                    </div>
+                    <div class="links">
+                        <p>5 MINS READ</p>
+                        <a href="">CONTINUE READING<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1621036579347-00e4f46c7abe?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjIxNDU0Nzgy&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600" alt="">
+                <div class="border">
+                    <div class="blog-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque nobis minima iusto nihil.
+                    </div>
+                    <div class="tags">
+                        <span class="tech">Django</span>
+                        <span  class="tech">HTML</span>
+                        <span  class="tech">CSS</span>
+                        <span  class="tech">SQLITE3</span>
+                    </div>
+                    <div class="links">
+                        <p>5 MINS READ</p>
+                        <a href="">CONTINUE READING<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="/#projects" class="btn-link">All Blogs <i class="fa fa-arrow-right" aria-hidden="true"></i></i> </a>
     </div>
 
     <!-- Contact -->
