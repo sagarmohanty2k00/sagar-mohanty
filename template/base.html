@@ -31,6 +31,7 @@
         * {
             font-size: 1.1rem;
             color: white;
+            box-sizing: border-box !important;
         }
 
         body {
@@ -146,19 +147,6 @@
             transition: 0.6s;
         }
 
-        @media screen  and (min-width: 720px) {
-            .header__text {
-                font-size: 5vw;
-            }            
-        }
-
-        @media screen and (min-width: 993px) {
-            .header__text {
-                font-size: 60px;
-            }
-        }
-
-
         .w-fix {
             width: 100px;
             text-align: center;
@@ -173,7 +161,27 @@
             border-radius: 0 12px 12px 0;
         }
 
+        .skill__box {
+            display: flex;
+            flex-direction: row;
+        }
 
+        @media screen and (max-width : 900px) {
+            .skill__box {
+                flex-direction: column;
+                max-width: 400px;
+                margin: auto;
+            }
+            .skill__container-1 {
+                border-radius: 12px 12px 0 0;
+                margin-bottom: 2px;
+            }
+
+            .skill__container-2 {
+                border-radius: 0 0 12px 12px;
+                margin-top: 2px;
+            }
+        }
         
         .skill__container {
             width: 100%;
@@ -214,6 +222,30 @@
             font-size: 84px;
             font-weight: 900;
             color: var(--off-background);
+        }
+
+        @media screen  and (min-width: 720px) {
+            .header__text{
+                font-size: 5vw;
+            }
+        }
+
+        @media screen and (min-width: 993px) {
+            .header__text {
+                font-size: 60px;
+            }
+        }
+
+        @media screen and (max-width: 565px) {
+            .big-letters {
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (max-width: 720px) {
+            .big-letters {
+                font-size: 36px;
+            }
         }
 
         .sayhello {
@@ -309,19 +341,24 @@
 
 
     <!-- Section Hero -->
-    <section id="hero">
-        <h1 class="ms-3 me-3 ms-lg-0 header__text mb-3">
-            Hello 👋 <br>I'm Sagar Mohanty.
-        </h1>
-        <div class="fs-4 ms-lg-0 me-3 ms-3 mb-5 clr-off-white">
-            A full stack web developer and python programmer. Mostly works on Django, ReactJS and SQL databases.
+    <section id="hero" class="d-flex align-items-center justify-content">
+        <div class="d-flex flex-lg-row flex-column justify-space-between">
+            <div class="f-100 w-100 mb-auto">
+                <h1 class="ms-3 me-3 ms-lg-0 header__text mb-3">
+                    Hello 👋 <br>I'm Sagar Mohanty.
+                </h1>
+                <div class="fs-4 ms-lg-0 me-3 ms-3 mb-5 clr-off-white">
+                    A full stack web developer and python programmer. Mostly works on Django, ReactJS and SQL databases.
+                </div>
+        
+                <button class="contact-btn ms-3 p-1 ps-3 pe-3 fs-4">
+                    Contact Me
+                </button>
+            </div>
+            <div class="m-auto p-lg-0 pt-5">
+                <img src="../static/images/banner-image.png" alt="" class="img-fluid m-0" style="max-width: 400px; margin: 0;">
+            </div>
         </div>
-
-        <button class="contact-btn ms-3 p-1 ps-3 pe-3 fs-4">
-            Contact Me
-        </button>
-
-        <div class="background__animation"></div>
     </section>
 
 
@@ -522,9 +559,9 @@
         </h1>
         <div class="ms-2 mb-5 underline"></div>
         <div class="m-4">
-            <div class="d-flex justify-space-between">
+            <div class="skill__box justify-space-between">
                 <div class="skill__container-1 skill__container">
-                    <i class="fa fa-html5 mb-5"></i>
+                    <i class="fa fa-cogs mb-5"></i>
                     <h1 class="fs-4">Back-end Development</h1>
                     <div class="clr-off-white mt-3">I like to create APIs from scratch that are simple, understadable and scalable.</div>
 
@@ -544,7 +581,7 @@
                 
                 
                 <div class="skill__container ">
-                    <i class="fa fa-cogs mb-5"></i>
+                    <i class="fa fa-html5 mb-5"></i>
                     <h1 class="fs-4">Front-end Development</h1>
 
                     <div class="clr-off-white mt-3">I like to create simple yet elegant UI for WebApps and Websites.</div>
@@ -588,15 +625,15 @@
         </h1>
         <div class="ms-2 mb-2 underline"></div>
 
-        <li class="clr-off-white ms-4 fs-4">
-            Rated <span class="big-letters">1073</span> on <a href="" class="generic-link">codeforces.com</a>
+        <li class="clr-off-white ms-4">
+            Rated <span class="big-letters">1048</span> on <a href="" class="generic-link">codeforces.com</a>
         </li>
 
-        <li class="clr-off-white ms-4 fs-4">
-            Solved <span class="big-letters">180+</span> questions on <a href="" class="generic-link">leetcode.com</a>
+        <li class="clr-off-white ms-4">
+            Solved <span class="big-letters">190+</span> questions on <a href="" class="generic-link">leetcode.com</a>
         </li>
 
-        <li class="clr-off-white ms-4 fs-4">
+        <li class="clr-off-white ms-4">
             Global rank <span class="big-letters">1707</span> in <a href="" class="generic-link">Goolge kickstart 2021 E</a>
         </li>
 
@@ -610,15 +647,15 @@
         </h1>
         <div class="m-auto underline mb-4"></div>
 
-        <div class="m-auto clr-off-white fs-4" style="text-align: center; width: 90%;">
+        <div class="m-auto mb-5 w-75 clr-off-white fs-4" style="text-align: center; width: 90%;">
             I am currently looking for new opportunities. If you have any open positions that suits my profile or you want me to be engaged in any freelance project then please feel free to <b>SAY HELLO</b>
         </div>
 
-        <a mailto='sagarmohanty2k00@gmail.com' class="resume sayhello mt-5 mb-auto">SAY HELLO</a>
+        <a href="mailto:sagarmohanty2k00@gmail.com" class="resume sayhello mt-5 mb-auto">Say Hello </a>
         
         <!-- Copyright -->
         <div class="copyright mb-0 mt-auto mb-5">
-           Designed & Built By <a class="text-success" target="_black" href="https://github.com/sagarmohanty2k00/">@Sagar Mohanty</a><br>
+           Design and Built with 💙 by <a class="text-success" target="_black" href="https://github.com/sagarmohanty2k00/">@sagar</a><br>
            
             <a class="m-2" style="display: inline-block;" aria-current="page" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
